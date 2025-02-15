@@ -1,0 +1,65 @@
+[checksums]
+images/efiboot.img = sha256:0961bead2e53997f69f480c38058726450c49e9ca7047ca5ea171fa31a4efa95
+images/install.img = sha256:4f5f4fe45598e3991ed34d539c5d57b3bb0642c179eda065fe58c7150e29d8d9
+images/pxeboot/initrd.img = sha256:56d3ad958a2b3870eed7a2ec07edd4f975b05fd04c53e38ea0f0a4587be58ffb
+images/pxeboot/vmlinuz = sha256:ea9690b40324133d81a95772ba5d33d41dd089dbeaafe1175820b7f041ae64ef
+
+[general]
+arch = x86_64
+family = DonkOS
+name = DonkOS 1.0
+packagedir = minimal/Packages
+platforms = x86_64,xen
+repository = minimal
+timestamp = 1731721955
+variant = minimal
+variants = BaseOS,minimal
+version = 1.0
+
+[header]
+type = productmd.treeinfo
+version = 1.2
+
+[images-x86_64]
+efiboot.img = images/efiboot.img
+initrd = images/pxeboot/initrd.img
+kernel = images/pxeboot/vmlinuz
+
+[images-xen]
+initrd = images/pxeboot/initrd.img
+kernel = images/pxeboot/vmlinuz
+
+[media]
+discnum = 1
+totaldiscs = 1
+
+[release]
+name = DonkOS
+short = Donk
+version = 1.0
+
+[stage2]
+mainimage = images/install.img
+
+[tree]
+arch = x86_64
+build_timestamp = 1731721955
+platforms = x86_64,xen
+variants = BaseOS,minimal
+
+[variant-BaseOS]
+id = BaseOS
+name = BaseOS
+packages = BaseOS/Packages
+repository = BaseOS
+type = variant
+uid = BaseOS
+
+[variant-minimal]
+id = minimal
+name = minimal
+packages = minimal/Packages
+repository = minimal
+type = variant
+uid = minimal
+

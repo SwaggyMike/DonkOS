@@ -1,0 +1,10 @@
+@core
+vim
+python3
+qemu-kvm
+libvirt
+virt-install
+virt-viewer
+bridge-utils
+cockpit-machines
+the-silver-searcher

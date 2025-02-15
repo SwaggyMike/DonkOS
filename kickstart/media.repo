@@ -1,0 +1,6 @@
+[InstallMedia]
+name=Rocky Linux 9.5
+mediaid=1731728019.2233934
+metadata_expire=-1
+gpgcheck=0
+cost=500
