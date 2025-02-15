@@ -8,7 +8,7 @@ The primary goal of DonkOS is to explore and refine:
 - Customizing a Linux distribution to suit specific needs
 - Automating system setup, package installations, and configurations
 - Managing kickstart files for unattended installations
-- 
+  
 ## Features
 
 - **Rocky Linux Base** – Built upon the stability of Rocky Linux
