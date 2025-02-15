@@ -1,0 +1,9 @@
+# Ignore log files
+COMPILE.log
+
+# Ignore ISO files
+*.iso
+
+# Ignore repodata files
+kickstart/**/repodata/
+
